@@ -29,7 +29,7 @@ async def img_sampler(event):
         lim = lim.replace("lim=", "")
         query = query.replace("lim=" + lim[0], "")
     except IndexError:
-        lim = 100
+        lim = 60
     response = googleimagesdownload()
 
     # creating list of arguments
